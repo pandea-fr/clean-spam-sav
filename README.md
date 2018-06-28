@@ -2,7 +2,7 @@
 Prestashop Clean spam in sav 
 SQL command
 ```sql
-DELETE ct.*
+DELETE ct.*, cm.*
 FROM ps_customer_thread AS ct
 LEFT JOIN
 	ps_customer_message AS cm
