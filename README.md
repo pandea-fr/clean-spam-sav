@@ -21,7 +21,7 @@ WHERE ct.email LIKE '%qq.com'
 ```DELETE FROM `ps_connections_page` WHERE `time_start` < ( NOW( ) - INTERVAL 1 MONTH );```
 
 #### ps_guest
-```DELETE FROM `ps_guest` WHERE `date_add` < ( NOW( ) - INTERVAL 1 MONTH );```
+```DELETE FROM `ps_guest````
 
 #### ps_pagenotfound
 ```DELETE FROM `ps_pagenotfound` WHERE `date_add` < ( NOW( ) - INTERVAL 1 MONTH );```
