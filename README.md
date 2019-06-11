@@ -11,8 +11,17 @@ WHERE ct.email LIKE '%qq.com'
 ```
 
 # clean big tables 
-ps_connections
-ps_connections_page
-ps_connections_sources
-ps_guest
-ps_pagenotfound
+#### ps_connections
+```DELETE FROM `ps_connections` WHERE `date_add` < ( NOW( ) - INTERVAL 1 MONTH );```
+
+#### ps_connections_sources
+```DELETE FROM `ps_connections_source` WHERE `date_add` < ( NOW( ) - INTERVAL 1 MONTH );```
+
+#### ps_connections_page
+```DELETE FROM `ps_connections_page` WHERE `date_add` < ( NOW( ) - INTERVAL 1 MONTH );```
+
+#### ps_guest
+```DELETE FROM `ps_guest` WHERE `date_add` < ( NOW( ) - INTERVAL 1 MONTH );```
+
+#### ps_pagenotfound
+```DELETE FROM `ps_pagenotfound` WHERE `date_add` < ( NOW( ) - INTERVAL 1 MONTH );```
